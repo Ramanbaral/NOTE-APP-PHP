@@ -1,0 +1,23 @@
+#cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-header {
+  font-size: 24px;
+}
+
+.note {
+  width: 400px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.container-fluid {
+  margin: 0px 10px;
+}
+
+.delete_form {
+  display: inline;
+}

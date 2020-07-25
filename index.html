@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Note App</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- ######################################## alert ######################################### -->
+    <div
+      class="alert alert-warning alert-dismissible fade show mb-0"
+      role="alert"
+    >
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!-- ######################################## alert ######################################### -->
+
+    <div class="container">
+      <h1 style="text-align: center; font-size: 70px;" class="mt-1">
+        Welcome to Note App
+      </h1>
+
+      <h3 class="mt-4" style="font-size: 25px;">Create your note here:</h3>
+
+      <div class="form">
+        <form action="index.php" method="POST">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            placeholder="@title"
+            name="title"
+            required
+          />
+
+          <label for="note" class="mt-4">Your note:</label>
+          <textarea
+            class="form-control"
+            id="note"
+            rows="3"
+            name="note"
+            required=""
+            style="margin-top: 0px; margin-bottom: 0px; height: 316px;"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="btn btn-outline-info mt-3"
+            style="display: block; margin: auto; width: 300px;"
+          >
+            Create
+          </button>
+          <button
+            type="reset"
+            class="btn btn-outline-info mt-2"
+            style="display: block; margin: auto; width: 300px;"
+          >
+            Reset
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container-fluid row mt-4 mb-3" id="cards">
+      <!-- ########################################  CARDS  ##############################################  -->
+      <div class="card bg-light mb-3 note" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button class="btn btn-outline-info mr-5">Update</button>
+          <button class="btn btn-outline-info ml-4">Delete</button>
+        </div>
+      </div>
+
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button class="btn btn-outline-info mr-5">Update</button>
+          <button class="btn btn-outline-info ml-4">Delete</button>
+        </div>
+      </div>
+
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button class="btn btn-outline-info mr-5 mb-3">Update</button>
+          <button class="btn btn-outline-info ml-2 mb-3">Delete</button>
+        </div>
+      </div>
+
+      <div class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button class="btn btn-outline-info mr-5">Update</button>
+          <button class="btn btn-outline-info ml-4">Delete</button>
+        </div>
+      </div>
+
+      <!-- ########################################  CARDS  ##############################################  -->
+    </div>
+  </body>
+</html>
